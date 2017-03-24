@@ -1,4 +1,4 @@
-Mimisc python-libnetfilter
+Mimics python-libnetfilter from https://github.com/commonism/python-libnetfilter
 
 	INSTALLATION
 Install the required dependencies:
