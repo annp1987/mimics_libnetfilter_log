@@ -1,4 +1,5 @@
-Mimisc python-libnetfilter
+
+Mimisc python-libnetfilter from https://github.com/commonism/python-libnetfilter
 
 	INSTALLATION
 Install the required dependencies:
@@ -8,6 +9,3 @@ Install the required dependencies:
 On debian/ubuntu 
   * sudo apt-get install libnetfilter-log1
   * sudo pip install -r requirement.txt
-will do the jobs.
-
-

@@ -1,7 +1,9 @@
 import socket
+
 from lib.log.nflog_wrapper import nflog_handle
 
 import nflog_decode
+
 
 def main():
     import select

@@ -14,8 +14,6 @@ handler.setFormatter(
 handler.setLevel(logging.DEBUG)
 log.addHandler(handler)
 
-#__all__ = ['nflog_handle']
-
 
 class nflog_handle(_LP_nflog_handle):
     _type_ = _LP_nflog_handle
@@ -147,6 +145,7 @@ class nflog_data(_LP_nflog_data):
 
     @property
     def payload(self):
+        # int nflog_get_payload (struct nflog_data *nfad, char **data)
         buf = ctypes.c_char_p()
         r = libnflog.nflog_get_payload(self, ctypes.byref(buf))
         if r <= 0:

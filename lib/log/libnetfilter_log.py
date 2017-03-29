@@ -26,6 +26,7 @@ class _nflog_g_handle(ctypes.Structure):
 
 _LP_nflog_g_handle = ctypes.POINTER(_nflog_g_handle)
 
+
 class _nfulnl_msg_packet_hdr(ctypes.Structure):
 
     _fields_ = [
@@ -37,7 +38,6 @@ class _nfulnl_msg_packet_hdr(ctypes.Structure):
     @property
     def hw_protocol(self):
         return self.hw_protocol
-    pass
 
 _LP_nfulnl_msg_packet_hdr = ctypes.POINTER(_nfulnl_msg_packet_hdr)
 

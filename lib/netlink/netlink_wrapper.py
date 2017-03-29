@@ -1,9 +1,7 @@
 import ctypes
-import socket
 
 from nfnetlink import _LP_nfnl_handle, _LP_nlif_handle, libnfnl
 
-# __all__ = ['nfnl_handle', 'nlif_handle']
 
 class nfnl_handle(_LP_nfnl_handle):
     _type_ = _LP_nfnl_handle
